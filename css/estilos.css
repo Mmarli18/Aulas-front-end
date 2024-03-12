@@ -5,10 +5,57 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+
 div {
     background-color: white;
     width: 70%;
     margin: auto;
-}
+    border-radius: 8px;
+    padding: 16px;
 
-img {max-width: 100%;}
+    /* Sombra na caixa/bloco
+    box-shadow = cor distorção distorção suavização */
+    box-shadow:
+        red 5px 15px 10px;
+}
+    /* Tornado as imagens flexiveis/responsivas */
+    img {
+        max-width: 100%;
+    }
+
+    figure {
+        text-align: center;
+    }
+
+    /* Exercicio
+Crie uma nova regra CSS para estilizar o elemento h1 com as seguintes caracteristicas
+
+Fonte: Impact, Verdana, Arial e sans-serif
+Cor de fundo: escura com um pouco de transparência
+Cor do texto: clara
+Espaçamento: interno APENAS pra cima e pra baixo
+Letras maiúsculas
+Texto alinhado no meio
+Bordas arredondadas APENAS nos cantos superiores
+Sombra no TEXTO*/
+div {
+    h1 {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background-color: rgba(0, 0, 240, 0.45);
+        border-radius: 15px 15px 0px 0px;
+        color:rgb(250, 248, 247);
+        text-align: center;
+        text-shadow: black 5px 5px 5px ;
+        text-transform: uppercase;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+  h2{
+    font-size: 20px;
+    border-bottom-style: solid;
+    border-bottom-width: 5px; 
+    padding-left: 15px;
+  }
+        
+ 
