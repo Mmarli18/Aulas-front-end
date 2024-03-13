@@ -30,4 +30,20 @@ As regras vão valer para todos os elementos/tags desta página.
 #### Externa (mais usada)
 É criado um arquivo de extensão CSS dedicado às regras de formatação. Esse arquivo é então "conectado" as páginas HTML.
 
+---
+
+### Tipos de seletor
+- Tag: Seletor mais abrangente/generalista, casa com elementos HTML de acordo com a tag especificada.
+
+- Descendente: Seletor mais especifico, casa com elementos que são filhos (descendentes) de outro elemento. Usa-se espaço para separar o filho/pai.
+
+- Agrupado: Grupo de seletores que compartilham uma mesma formatação. Usa-se vírgula para separar os seletores;
+
+- Pseudo-Classe: Classes pré prontas/nativas da linguagem pode ser aplicadas em diversas situações. Ex. passar o mouse, reconhecer foco, selecionar determinados elementos etc, Começam com dois pontos (:)
+
+- Classe: Seletor versátil, permite a aplicação de estilos de diversos elementos, possibilitando também a combinação de diferentes classes. No CSS usa-se ponto (.nome-da-classe) para criar. No HTML usa se o atributo class="nome-da-classe" para aplicar a classe.
+
+- Identificado: Seletor bastante restrito (o mesmo ID só pode ser usado apenas uma vez por pagina) permite criar uma estelização específica. No CSS usa-se #nome-do-id para criar, e no HTML usa-se o atributo id="nome-do-id" para aplicar.
+
+
 ## JS

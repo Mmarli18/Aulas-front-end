@@ -61,6 +61,7 @@ div {
         font-weight:lighter;
         -webkit-text-stroke-color: black;
         -webkit-text-stroke-width: 1px;
+        margin: 0px;
     }
 }
   h2{
@@ -111,8 +112,23 @@ nav {text-align: center;}
   /* Seletor descendente */
 nav a {color: black;
     font-weight: bold;
-    background-color: rgb(119, 233, 91);
+    background-color: rgba(73, 28, 197, 0.692);
     display: inline-block;
     width: 50%;
     padding: 10px;
+    transition: 1s;
+}
+
+/* Regras de acionamento dos links (Ex. passar o mouse) */
+
+nav a:hover, nav a:focus {
+    background-color: rgb(188, 196, 176);
+
+}
+nav a:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+nav a:last-child {
+    border-bottom-right-radius: 10px;
 }
