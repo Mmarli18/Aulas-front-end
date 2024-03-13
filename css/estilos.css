@@ -1,4 +1,10 @@
 /* O que fazer? Vamos criar uma regra de formatação */
+
+/* Seletor (*) Univesal 
+Alterando o comportamento do box model CSS. Usando esta regra evitamos os problemas encontrados ao usar heigth, whith, padding e border ao mesmo tempo*/
+
+* {    box-sizing: border-box;}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url(../imagens/tarde.jpg);
@@ -6,7 +12,9 @@ body {
     background-size: cover;
 }
 
-div {
+/* Seletor Identificado (#) só pode ser usado uma vez na tag  */
+
+#container {
     background-color: white;
     width: 70%;
     margin: auto;
@@ -64,15 +72,12 @@ div {
         /* Seletor TAG (vale para todos os <a> */
   a {text-decoration: none;}
 
-  /* Seletor descendente */
-nav a {color: black;}
-
   figure img {
 transform: scale(0.9);
 transition: 0.5s;
 filter: grayscale(100%);
   }
-/* hover ação de passar o mouse */
+/* Pseudo-Classe hover ação de passar o mouse */
   figure img:hover{
     transform:scale(1) rotateX(180deg);
     filter: grayscale(0);
@@ -90,4 +95,24 @@ filter: grayscale(100%);
     color: azure;
     padding: 3px;
     border-radius: 4px;
+}
+.destaque-back {
+    background-color: rgba(209, 165, 52, 0.575);
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Regras para o menu e seus links */
+nav {text-align: center;}
+
+/* Regras para o estado inicial dos links */
+
+  /* Seletor descendente */
+nav a {color: black;
+    font-weight: bold;
+    background-color: rgb(119, 233, 91);
+    display: inline-block;
+    width: 50%;
+    padding: 10px;
 }
