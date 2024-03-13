@@ -49,6 +49,10 @@ div {
         text-transform: uppercase;
         padding-top: 20px;
         padding-bottom: 20px;
+        letter-spacing: 5px;
+        font-weight:lighter;
+        -webkit-text-stroke-color: black;
+        -webkit-text-stroke-width: 1px;
     }
 }
   h2{
@@ -57,5 +61,21 @@ div {
     border-bottom-width: 5px; 
     padding-left: 15px;
   }
-        
+        /* Seletor TAG (vale para todos os <a> */
+  a {text-decoration: none;}
+
+  /* Seletor descendente */
+nav a {color: black;}
+
+  figure img {
+transform: scale(0.9);
+transition: 0.5s;
+filter: grayscale(100%);
+  }
+/* hover ação de passar o mouse */
+  figure img:hover{
+    transform:scale(1) rotateX(180deg);
+    filter: grayscale(0);
+  }
+
  
