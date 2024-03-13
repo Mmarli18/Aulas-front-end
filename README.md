@@ -9,14 +9,18 @@ Atividades de estudo de HTML e CSS
 
 ## CSS
 Linguagem de estilização que "casa" com elementos HTML.
+
+```css
 Seletor {propriedade: valor;}
-``
+
 Seletor {
     propriedade1: valor;
     propriedade2: valor;
     propriedade3: valor;
 }
-``
+```
+
+
 Em geral CSS serve para:
 
 1. Estilos de vários tipos (cores, sombras. borda etc...)
