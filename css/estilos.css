@@ -3,7 +3,9 @@
 /* Seletor (*) Univesal 
 Alterando o comportamento do box model CSS. Usando esta regra evitamos os problemas encontrados ao usar heigth, whith, padding e border ao mesmo tempo*/
 
-* {    box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -26,16 +28,17 @@ body {
     box-shadow:
         red 5px 15px 10px;
 }
-    /* Tornado as imagens flexiveis/responsivas */
-    img {
-        max-width: 100%;
-    }
 
-    figure {
-        text-align: center;
-    }
+/* Tornado as imagens flexiveis/responsivas */
+img {
+    max-width: 100%;
+}
 
-    /* Exercicio
+figure {
+    text-align: center;
+}
+
+/* Exercicio
 Crie uma nova regra CSS para estilizar o elemento h1 com as seguintes caracteristicas
 
 Fonte: Impact, Verdana, Arial e sans-serif
@@ -51,66 +54,83 @@ div {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         background-color: rgba(0, 0, 240, 0.45);
         border-radius: 15px 15px 0px 0px;
-        color:rgb(250, 248, 247);
+        color: rgb(250, 248, 247);
         text-align: center;
-        text-shadow: black 5px 5px 5px ;
+        text-shadow: black 5px 5px 5px;
         text-transform: uppercase;
         padding-top: 20px;
         padding-bottom: 20px;
         letter-spacing: 5px;
-        font-weight:lighter;
+        font-weight: lighter;
         -webkit-text-stroke-color: black;
         -webkit-text-stroke-width: 1px;
         margin: 0px;
     }
 }
-  h2{
+
+h2 {
     font-size: 20px;
     border-bottom-style: solid;
-    border-bottom-width: 5px; 
+    border-bottom-width: 5px;
     padding-left: 15px;
-  }
-        /* Seletor TAG (vale para todos os <a> */
-  a {text-decoration: none;}
+}
 
-  figure img {
-transform: scale(0.9);
-transition: 0.5s;
-filter: grayscale(100%);
-  }
+/* Seletor TAG (vale para todos os <a> */
+a {
+    text-decoration: none;
+}
+
+figure img {
+    transform: scale(0.9);
+    transition: 0.5s;
+    filter: grayscale(100%);
+}
+
 /* Pseudo-Classe hover ação de passar o mouse */
-  figure img:hover{
-    transform:scale(1) rotateX(180deg);
+figure img:hover {
+    transform: scale(1) rotateX(180deg);
     filter: grayscale(0);
-  }
-/* Seletor Agrupado (grupo de seletor com a mesma formatação */
- p, li  {
-    font-size: 20px;
- }
+}
 
- /* Seletor Classe */
-.centralizar {text-align: center;}
-.sombra {text-shadow: red 1px 1px 5px;}
+/* Seletor Agrupado (grupo de seletor com a mesma formatação */
+p,
+li {
+    font-size: 20px;
+}
+
+/* Seletor Classe */
+.centralizar {
+    text-align: center;
+}
+
+.sombra {
+    text-shadow: red 1px 1px 5px;
+}
+
 .destaque {
     background-color: black;
     color: azure;
     padding: 3px;
     border-radius: 4px;
 }
+
 .destaque-back {
-    background-color: rgba(209, 165, 52, 0.575);
+    background-color: rgba(190, 145, 29, 0.575);
     padding: 8px;
     border-radius: 4px;
     margin-bottom: 20px;
 }
 
 /* Regras para o menu e seus links */
-nav {text-align: center;}
+nav {
+    text-align: center;
+}
 
 /* Regras para o estado inicial dos links */
 
-  /* Seletor descendente */
-nav a {color: black;
+/* Seletor descendente */
+nav a {
+    color: black;
     font-weight: bold;
     background-color: rgba(73, 28, 197, 0.692);
     display: inline-block;
@@ -121,10 +141,12 @@ nav a {color: black;
 
 /* Regras de acionamento dos links (Ex. passar o mouse) */
 
-nav a:hover, nav a:focus {
+nav a:hover,
+nav a:focus {
     background-color: rgb(188, 196, 176);
 
 }
+
 nav a:first-child {
     border-bottom-left-radius: 10px;
 }
@@ -132,3 +154,31 @@ nav a:first-child {
 nav a:last-child {
     border-bottom-right-radius: 10px;
 }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+}
+
+ul li {
+    color: blue;
+    list-style-type: square;
+}
+
+/* Seletor Pseudo elemento (::marker) utilizamos para alterar o icone de marcador da lista  */
+
+ul li::marker {
+    content: "🔎";
+    color:blue;
+    font-weight: bold;
+}
+
+ul li:first-child {font-weight: bold;}
+ul li:last-child {font-style: italic;}
+ul li:nth-child(3){color: brown;}
+
+/* Cores alternadas */
+
+ul li:nth-child(even){background: pink;}
+ul li:nth-child(odd){background: rgb(117, 172, 255);}

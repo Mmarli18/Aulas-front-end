@@ -56,5 +56,3 @@ As regras vão valer para todos os elementos/tags desta página.
 
 - Identificado: Seletor bastante restrito (o mesmo ID só pode ser usado apenas uma vez por pagina) permite criar uma estelização específica. No CSS usa-se #nome-do-id para criar, e no HTML usa-se o atributo id="nome-do-id" para aplicar.
 
-
-## JS
