@@ -182,3 +182,21 @@ ul li:nth-child(3){color: brown;}
 
 ul li:nth-child(even){background: pink;}
 ul li:nth-child(odd){background: rgb(117, 172, 255);}
+
+details {
+    border: solid;
+    padding: 8px;
+}
+
+/* Cursor: pointer, aparece uma mão indicando para o cliente clicar */
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+summary::marker { content: "🧐";}
+
+/* Seletor de ATRIBUTO ([nome-do-atributo]) somente quando o details estiver com o atributo open (portanto, quando ele é acionado faremos a troca do emoji/marcador*/
+
+details[open] summary::marker {content: "😛";}
