@@ -16,13 +16,19 @@
 			width: 30%;
 			padding: 8px;
 		}
+		/* Justify-content em direção padrão (row), se comporta como alinhamento horizontal
+		Se estiver na direção (Column), se comporta como alinhamento vertical */
+
+		/* align-items funciona de forma contraria, ou seja em modo ROW alinha verticalmente, e em modo COLUMN alinha horizontalmente */
+
 
 		#exemplo-flexbox {
 			width: 80%;
-			height: 600px;
-			align-items: center;
+			height: 1100px;
+			align-items:center;
+			flex-direction: column;
 			margin: auto;
-			background-color: rgb(177, 107, 107);
+			background-color: rgba(177, 107, 107, 0.733);
 
 			/* Habilitando o flexbox */
 			display:flex;
