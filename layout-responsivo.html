@@ -5,10 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout Responsivo</title>
+    <style>
+        /* 1) regras de uso geral */
+        *{ box-sizing: border-box; }
+        
+        body {
+            font-family: Verdana;
+            background-color: lightblue;
+        }
+        .container {
+            background-color: white;
+            padding: 5px;
+            box-shadow: black 0 0 5px;
+        }
+        body, h1, h2, p{
+            margin: 0;
+            padding: 0;
+        }
+        h2, p { padding: 4px;}
+
+        .topo {background-color: palevioletred;
+        padding: 4px;}
+
+        h1 {background-color: yellow;}
+
+        .menu { background-color: greenyellow;}
+
+        .conteudo {
+            padding: 4px;
+            background-color: aquamarine;
+        }
+
+        .um, .dois, .tres {border: solid 1px black;}
+
+        .um {background-color: coral;}
+
+        .dois {background-color: rgb(243, 191, 245);}
+
+        .tres {background-color: rgb(103, 145, 32);}    
+
+        .rodape {background-color: burlywood;}
+</style>
 </head>
 
 <body>
-    <div class="conteiner">
+     <div class="container">
         <header class="topo">
             <h1>Site Exemplo</h1>
             <nav class="menu">
@@ -36,12 +77,10 @@
             </article>
         </main>
 
-        <footer>
+        <footer class="rodape">
             <h2>Rodapé</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, suscipit.</p>
         </footer>
-
-
     </div>
 
 </body>
