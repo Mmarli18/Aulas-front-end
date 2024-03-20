@@ -7,49 +7,97 @@
     <title>Layout Responsivo</title>
     <style>
         /* 1) regras de uso geral */
-        *{ box-sizing: border-box; }
-        
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Verdana;
             background-color: lightblue;
         }
+
         .container {
             background-color: white;
             padding: 5px;
             box-shadow: black 0 0 5px;
         }
-        body, h1, h2, p{
+
+        body,
+        h1,
+        h2,
+        p {
             margin: 0;
             padding: 0;
         }
-        h2, p { padding: 4px;}
 
-        .topo {background-color: palevioletred;
-        padding: 4px;}
+        h2,
+        p {
+            padding: 4px;
+        }
 
-        h1 {background-color: yellow;}
+        .topo {
+            background-color: palevioletred;
+            padding: 4px;
+        }
 
-        .menu { background-color: greenyellow;}
+        h1 {
+            background-color: yellow;
+        }
+
+        .menu {
+            background-color: greenyellow;
+        }
 
         .conteudo {
             padding: 4px;
             background-color: aquamarine;
         }
 
-        .um, .dois, .tres {border: solid 1px black;}
+        .um,
+        .dois,
+        .tres {
+            border: solid 1px black;
+        }
 
-        .um {background-color: coral;}
+        .um {
+            background-color: coral;
+        }
 
-        .dois {background-color: rgb(243, 191, 245);}
+        .dois {
+            background-color: rgb(243, 191, 245);
+        }
 
-        .tres {background-color: rgb(103, 145, 32);}    
+        .tres {
+            background-color: rgb(103, 145, 32);
+        }
 
-        .rodape {background-color: burlywood;}
-</style>
+        .rodape {
+            background-color: burlywood;
+        }
+
+        /* Regras de uso condicional (com media queries) */
+        @media screen and (min-width: 550px) {
+            .topo {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            h1 {
+                width: 60%;
+            }
+
+            .menu {
+                width: 40%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 
 <body>
-     <div class="container">
+    <div class="container">
         <header class="topo">
             <h1>Site Exemplo</h1>
             <nav class="menu">
