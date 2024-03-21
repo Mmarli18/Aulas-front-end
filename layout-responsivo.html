@@ -54,6 +54,7 @@
             display: flex;
             /* Flex Wrap, estamos habilitando a quebra de linha (row) */
             flex-wrap: wrap;
+            /* Propriedade nova usada para espaçamentos entre elementos flex. Necessario ajustar largura e/ou altura dos elementos em que haverá espeçamento gap: 10px; */
         }
 
         .um,
@@ -82,6 +83,7 @@
         @media screen and (min-width: 550px) {
             .topo {
                 display: flex;
+                /* Habilitando a que da linha (row) ou seja se não tiver espaço para encaixar lado a lado, acontecerá uma quebra (o elemento vai para a linha de baixo) */
                 justify-content: space-between;
             }
 
@@ -104,11 +106,38 @@
                 }
 
                 .um {width: 68%;}
-                .dois {width: 30%;}
-                .tres {width: 100%;}
-            }
-        }
 
+                .dois {width: 30%;}
+
+                .tres {
+                    width: 100%;
+                    margin-top: 1%;
+                }
+            }
+
+            @media screen and (min-width:1000px) {
+                .topo { height: 100px;}
+                h1 {font-size: 40px;
+                    display: flex;
+                    align-items: center;}
+
+            .menu a {font-size: 20px;}
+
+                    /* Desabilitando a quebra/wrap */
+            .conteudo {flex-wrap: nowrap;}
+
+                    .um {width: 33%;}
+                    .dois {width: 33%;}
+                    .tres {width: 33%;
+                        margin-top: 0%}
+
+                .container {
+
+                    max-width: 1000px;
+                    margin: auto;
+                }
+                }
+        }
     </style>
 </head>
 
